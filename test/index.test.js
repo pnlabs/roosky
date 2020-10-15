@@ -1,4 +1,4 @@
-import roosky from "../lib/roosky"
+const roosky = require("../lib/roosky")
 
 const RegExp = /^[АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯабвгдежзиклмнопрстуфхцчшщэюя]+$/
 

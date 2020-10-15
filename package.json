@@ -1,12 +1,12 @@
 {
 	"name": "roosky",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Russian form data random fields generation",
 	"main": "lib/roosky.js",
 	"types": "lib/roosky.d.ts",
 	"scripts": {
 		"test": "jest",
-		"prepare": "./node_modules/typescript/bin/tsc -d --outDir lib src/roosky.ts"
+		"prepare": "node node_modules/typescript/bin/tsc -d --outDir lib src/roosky.ts"
 	},
 	"repository": {
 		"type": "git",
