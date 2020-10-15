@@ -57,7 +57,9 @@ const middleName = () => {
 
 const phone = () => {
     return (
-        '+79' + String(Math.trunc(Math.random() * 1000000000)).padStart(9, '0')
+        '+7' 
+        + String(Math.trunc(Math.random() * 19) + 881)
+        + String(Math.trunc(Math.random() * 10000000)).padStart(7, '0')
     )
 }
 
