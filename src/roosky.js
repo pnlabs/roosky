@@ -24,11 +24,6 @@ const firstName = () => {
 			(s === 0 ? randomChar(c).toUpperCase() : randomChar(c)) +
 			randomChar(v)
 	}
-	/*
-        if (Math.random() > 0.5 && gender > 0) {
-            name = name + randomChar(c)
-        }
-    */
 	name = name + randomChar(c)
 	return name
 }

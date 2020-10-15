@@ -1,27 +1,38 @@
 {
-  "name": "roosky",
-  "version": "0.0.1",
-  "description": "Russian form data random generation",
-  "main": "src/roosky.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pnlabs/roosky.git"
-  },
-  "keywords": [
-    "russian",
-    "forms",
-    "random",
-    "generator",
-    "fake",
-    "fakes"
-  ],
-  "author": "Pavel Mudrov",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pnlabs/roosky/issues"
-  },
-  "homepage": "https://github.com/pnlabs/roosky#readme"
+	"name": "roosky",
+	"version": "0.0.1",
+	"description": "Russian form data random fields generation",
+	"main": "lib/roosky.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "babel src -d lib"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pnlabs/roosky.git"
+	},
+	"keywords": [
+		"russian",
+		"forms",
+		"random",
+		"generator",
+		"fake",
+		"fakes"
+	],
+	"author": "Pavel Mudrov",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/pnlabs/roosky/issues"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.12.0",
+		"@babel/core": "^7.12.0",
+		"@babel/preset-env": "^7.12.0"
+	},
+	"homepage": "https://github.com/pnlabs/roosky#readme"
 }
