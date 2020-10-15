@@ -1,10 +1,10 @@
 {
 	"name": "roosky",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Russian form data random fields generation",
 	"main": "lib/roosky.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "jest",
 		"prepare": "babel src -d lib"
 	},
 	"repository": {
@@ -19,7 +19,12 @@
 		"fake",
 		"fakes"
 	],
-	"author": "Pavel Mudrov",
+	"author": {
+		"name": "Pavel Mudrov",
+		"email": "pnlabs@gmail.com",
+		"url": "http://pnlabs.ru",
+		"twitter": "https://twitter.com/pmudrov"
+	},
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/pnlabs/roosky/issues"
@@ -32,7 +37,9 @@
 	"devDependencies": {
 		"@babel/cli": "^7.12.0",
 		"@babel/core": "^7.12.0",
-		"@babel/preset-env": "^7.12.0"
+		"@babel/preset-env": "^7.12.0",
+		"babel-jest": "^26.5.2",
+		"jest": "^26.5.3"
 	},
 	"homepage": "https://github.com/pnlabs/roosky#readme"
 }

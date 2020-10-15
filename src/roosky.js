@@ -63,4 +63,4 @@ const position = () => {
 	return string + randomTail(posTails)
 }
 
-export default { firstName, lastName, middleName, phone, position }
+export { firstName, lastName, middleName, phone, position }
