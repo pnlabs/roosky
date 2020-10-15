@@ -1,4 +1,4 @@
-import roosky from "../src/roosky"
+import roosky from "../lib/roosky"
 
 const RegExp = /^[АБВГДЕЖЗИКЛМНОПРСТУФХЦЧШЩЭЮЯабвгдежзиклмнопрстуфхцчшщэюя]+$/
 

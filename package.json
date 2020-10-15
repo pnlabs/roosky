@@ -1,12 +1,12 @@
 {
 	"name": "roosky",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Russian form data random fields generation",
-  "main": "lib/roosky.js",
-  "types": "./lib/roosky.d.ts",
+	"main": "lib/roosky.js",
+	"types": "lib/roosky.d.ts",
 	"scripts": {
 		"test": "jest",
-		"prepare": "babel src -d lib"
+		"prepare": "./node_modules/typescript/bin/tsc -d --outDir lib src/roosky.ts"
 	},
 	"repository": {
 		"type": "git",
@@ -38,9 +38,12 @@
 	"devDependencies": {
 		"@babel/cli": "^7.12.0",
 		"@babel/core": "^7.12.0",
+		"@babel/parser": "^7.12.0",
 		"@babel/preset-env": "^7.12.0",
+		"@babel/types": "^7.12.0",
 		"babel-jest": "^26.5.2",
-		"jest": "^26.5.3"
+		"jest": "^26.5.3",
+		"typescript": "^4.0.3"
 	},
 	"homepage": "https://github.com/pnlabs/roosky#readme"
 }

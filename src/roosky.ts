@@ -1,16 +1,14 @@
-"use strict"
-
 const c = "бвгджзклмнпрстфхцчшщ"
 const v = "аеиоуэюя"
 const lnTails = ["ов", "ин", "ев"]
 const posTails = ["ер", "ор", "ист", "ик"]
 
-const randomChar = (s) => {
+const randomChar = (s: string) => {
 	const position = Math.trunc(Math.random() * s.length)
 	return s.slice(position, position + 1)
 }
 
-const randomTail = (tails) => {
+const randomTail = (tails: string[]) => {
 	const position = Math.trunc(Math.random() * tails.length)
 	return tails[position]
 }
@@ -63,4 +61,4 @@ const position = () => {
 	return string + randomTail(posTails)
 }
 
-export { firstName, lastName, middleName, phone, position }
+export default { firstName, lastName, middleName, phone, position }
