@@ -1,8 +1,9 @@
 {
 	"name": "roosky",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Russian form data random fields generation",
-	"main": "lib/roosky.js",
+  "main": "lib/roosky.js",
+  "types": "./lib/roosky.d.ts",
 	"scripts": {
 		"test": "jest",
 		"prepare": "babel src -d lib"
