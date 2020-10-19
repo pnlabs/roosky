@@ -76,3 +76,4 @@ const email = () => {
 }
 
 export { firstName, lastName, middleName, phone, position, email }
+export default { firstName, lastName, middleName, phone, position, email }
