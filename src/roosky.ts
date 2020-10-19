@@ -2,6 +2,7 @@ const c = "бвгджзклмнпрстфхцчшщ"
 const v = "аеиоуэюя"
 const lnTails = ["ов", "ин", "ев"]
 const posTails = ["ер", "ор", "ист", "ик"]
+const e = "abcdefghijklmnopqrstuvwxyz"
 
 const randomChar = (s: string) => {
 	const position = Math.trunc(Math.random() * s.length)
@@ -61,4 +62,17 @@ const position = () => {
 	return string + randomTail(posTails)
 }
 
-export { firstName, lastName, middleName, phone, position }
+const email = () => {
+	let string = ""
+	for (let s = 0; s < Math.trunc(Math.random() * 6 + 1); s++) {
+		string = string + randomChar(e)
+	}
+	string = string + '@'
+	for (let s = 0; s < Math.trunc(Math.random() * 6 + 1); s++) {
+		string = string + randomChar(e)
+	}
+	string = string + '.ru'
+	return string
+}
+
+export { firstName, lastName, middleName, phone, position, email }

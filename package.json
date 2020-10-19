@@ -1,6 +1,6 @@
 {
 	"name": "roosky",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Russian form data random fields generation",
 	"main": "lib/roosky.js",
 	"types": "lib/roosky.d.ts",

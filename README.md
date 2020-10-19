@@ -13,5 +13,6 @@ Russian names, work positions and phone numbers random generation
     roosky.phone()      // Телефон из резервных кодов 881-899,
                         // но может в будущем случайно совпасть с настоящим
     roosky.position()   // суноист
+    roosky.email()      // grtyhd@utirkj.ru
 
 ```
