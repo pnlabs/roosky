@@ -2,6 +2,7 @@ const c = "бвгджзклмнпрстфхцчшщ"
 const v = "аеиоуэюя"
 const lnTails = ["ов", "ин", "ев"]
 const posTails = ["ер", "ор", "ист", "ик"]
+const cityTails = ["дар", "град", "рск", "йск", "во", "хабль", "бург"]
 const e = "abcdefghijklmnopqrstuvwxyz"
 
 const randomChar = (s: string) => {
@@ -75,5 +76,18 @@ const email = () => {
 	return string
 }
 
-export { firstName, lastName, middleName, phone, position, email }
-export default { firstName, lastName, middleName, phone, position, email }
+const city = () => {
+	const sylls = Math.trunc(Math.random() * 4 + 1)
+	let city = ""
+	for (let s = 0; s < sylls; s++) {
+		city =
+			city +
+			(s === 0 ? randomChar(c).toUpperCase() : randomChar(c)) +
+			randomChar(v)
+	}
+	city = city + randomTail(cityTails)
+	return city
+}
+
+export { firstName, lastName, middleName, phone, position, email, city }
+export default { firstName, lastName, middleName, phone, position, email, city }

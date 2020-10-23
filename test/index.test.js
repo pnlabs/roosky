@@ -9,13 +9,13 @@ describe("Test", () => {
 		expect(roosky.middleName()).not.toBeNull()
 		expect(roosky.position()).not.toBeNull()
 		expect(roosky.email()).not.toBeNull()
+		expect(roosky.city()).not.toBeNull()
 	})
 	it("should be contained correct russian letters", () => {
 		expect(roosky.firstName()).toMatch(RegExp)
 		expect(roosky.lastName()).toMatch(RegExp)
 		expect(roosky.middleName()).toMatch(RegExp)
 		expect(roosky.position()).toMatch(RegExp)
-		
 	})
 	it("email at least should be contained an @ symbol", () => {
 		expect(roosky.email()).toMatch(/\@/)

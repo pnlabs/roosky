@@ -14,5 +14,6 @@ Russian names, work positions and phone numbers random generation
                         // но может в будущем случайно совпасть с настоящим
     roosky.position()   // суноист
     roosky.email()      // grtyhd@utirkj.ru
+    roosky.city()       // Ранисурск
 
 ```
